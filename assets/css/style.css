@@ -1,0 +1,95 @@
+body {
+  font-family: Verdana, "Open Sans";
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
+/* Masterclass block */
+ul.masterclass-accordian {
+  list-style-type: none;
+  padding-left: 0;
+}
+.masterclass-accordian .item__label,
+.masterclass-accordian .item__context {
+  border: 1px solid #ffffff;
+}
+.masterclass-accordian .item__context {
+  position: relative;
+  background: #d6edf7;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 20px 30px;
+}
+.masterclass-accordian .item__context::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #d6edf7;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+@media (max-width: 670px) {
+  .masterclass-accordian .item__context::before {
+    right: 15px;
+  }
+}
+.masterclass-accordian .item__label {
+  padding: 14px;
+}
+.masterclass-accordian li:nth-child(odd) a {
+  background: #077bad;
+}
+.masterclass-accordian li:nth-child(even) a {
+  background: #32a4d5;
+}
+.masterclass-accordian a.item__label {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media (max-width: 670px) {
+  .masterclass-accordian a.item__label {
+    padding-right: 40px;
+  }
+}
+.masterclass-accordian .star {
+  background-image: url('https://s3.amazonaws.com/media-jackcanfield/assets/images/success/breakthrough-to-success-online/pre-order/ty/star.png');
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 27px;
+  margin-right: 25px;
+  margin-left: 8px;
+  float: left;
+}
+@media (max-width: 670px) {
+  .masterclass-accordian .star {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .masterclass-accordian .star {
+    display: none;
+  }
+}
+.masterclass-accordian .arrow {
+  background-image: url('https://s3.amazonaws.com/media-jackcanfield/assets/images/success/breakthrough-to-success-online/pre-order/icon-arrow.png');
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 27px;
+  float: right;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+@media (max-width: 670px) {
+  .masterclass-accordian .arrow {
+    margin-right: 0;
+    position: absolute;
+    right: 15px;
+  }
+}
